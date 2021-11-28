@@ -1,6 +1,6 @@
 close all
 clear
-run('../vlfeat-0.9.20/toolbox/vl_setup')
+run('../vlfeat-0.9.21/toolbox/vl_setup')
 
 pos_imageDir = 'cropped_training_images_faces';
 pos_imageList = dir(sprintf('%s/*.jpg',pos_imageDir));
@@ -40,5 +40,4 @@ for i=1:neg_nImages
 %     imshow(imhog)
 %     pause;
 end
-
 save('pos_neg_feats.mat','pos_feats','neg_feats','pos_nImages','neg_nImages')

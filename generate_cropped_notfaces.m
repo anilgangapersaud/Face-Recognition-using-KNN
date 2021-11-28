@@ -1,5 +1,4 @@
 % you might want to have as many negative examples as positive examples
-n_have = 0;
 n_want = numel(dir('cropped_training_images_faces/*.jpg'));
 
 imageDir = 'images_notfaces';
@@ -7,7 +6,12 @@ imageList = dir(sprintf('%s/*.jpg',imageDir));
 nImages = length(imageList);
 
 new_imageDir = 'cropped_training_images_notfaces';
-mkdir(new_imageDir);
+n_have = 0;
+if ~exist(new_imageDir, 'dir')
+    mkdir(new_imageDir);
+else 
+    n_have = length(dir(sprintf('%s/*.jpg',new_imageDir)));
+end
 
 dim = 36;
 
