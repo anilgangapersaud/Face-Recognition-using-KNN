@@ -2,11 +2,23 @@
 % Student Name: Anil Gangapersaud
 % Student Number: 2151781411
 
-% Part 1
+%% README
+% The K-Nearest Neighbour Classifier (Part 1) takes a considerable amount of time to
+% run since I am cross validation across 5 folds. 
+
+%% Part 1 K-Nearest Neighbour Classifier
 run('kNearestNeighbourClassifier.m');
-disp("Finished Part 1. Press any key to continue.");
+disp("Finished Part 1.");
+
 pause;
 
-% Part 2
+% Part 2s
 run('faceDetection.m');
-disp("Finished P
+disp("Finished Part 2. Press any key to continue.");
+pause;
+
+% Part 3
+run('detect.m');
+
+% Part 3 - Run the Detector on class.jpg
+run('detect_class_faces.m');

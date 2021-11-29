@@ -38,7 +38,7 @@ for i=5394:6743
 end
 disp("Finished splitting data!");
 %% 4. Train an SVM on the features from training set.
-lambda = 0.0001;
+lambda = 0.000001;
 [w,b] = vl_svmtrain(trainingData',trainingLabels',lambda);
 %% 5. Test SVM on the validation set features
 fprintf('Classifier performance on train data:\n');
