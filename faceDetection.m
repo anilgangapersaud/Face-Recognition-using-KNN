@@ -1,7 +1,7 @@
 %% Part 2. Face Detection
 % Student Name: Anil Gangapersaud
 % Student Number: 215178411
-
+run('../vlfeat-0.9.21/toolbox/vl_setup');
 %% 1. Generate cropped not_face images
 run('generate_cropped_notfaces.m');
 

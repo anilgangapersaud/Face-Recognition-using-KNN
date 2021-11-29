@@ -1,7 +1,14 @@
-% run the detector on class.jpg
+%% Part 3. Multi-Scale Face Detector on Class
+% Student Name: Anil Gangapersaud
+% Student Number: 215178411
+run('../vlfeat-0.9.21/toolbox/vl_setup')
+
+%% Load Image
 class = im2single(imread('class.jpg'));
 imshow(class);
 hold on;
+
+%% Compute Bounding Boxes
 bboxes = zeros(0,4);
 confidences = zeros(0,1);
 plots = [];

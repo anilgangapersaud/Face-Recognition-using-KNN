@@ -28,4 +28,4 @@ run('detect_class_faces.m');
 disp("Finished Part 3b.");
 disp("Press any key to exit.");
 pause;
-disp("Finished running A3 Masterscript!");
+disp("Finished running A

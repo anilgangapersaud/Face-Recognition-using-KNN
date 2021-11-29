@@ -1,8 +1,8 @@
 %% Part 1. K-Nearest Neighbour Classifier
 % Student Name: Anil Gangapersaud
 % Student Number: 215178411
+run('../vlfeat-0.9.21/toolbox/vl_setup');
 %% Load Dataset
-run('vlfeat-0.9.21/toolbox/vl_setup');
 face_data = dir('cropped_training_images_faces/*.jpg') ;
 not_face_data = dir('cropped_training_images_notfaces/*.jpg');
 %% Split Data into Groups
